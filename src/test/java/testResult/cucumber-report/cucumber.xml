@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="165.221157">
+<testcase classname="Login into Pregnancy Plus Application" name="Login using valid username and valid password and check daily text" time="68.721044">
+<system-out><![CDATA[Given Click On Login button.................................................passed
+Then Enter the User Name dev_qa@email.com...................................passed
+Then Enter the Password 12345678............................................passed
+Then Click on Continue Button...............................................passed
+Then Click on ok button.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login into Pregnancy Plus Application" name="Login using valid username and valid password and check daily text" time="96.500113">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at com.face.stepDefinitions.PPlusDaily.verifyLoginSuccessful(PPlusDaily.java:68)&#13;&#10;&#9;at ✽.Then Verify whether login successful or not(PPlusComparison.feature:24)&#13;&#10;"><![CDATA[Given Click On Login button.................................................passed
+Then Click on Ok Button.....................................................passed
+Then Enter the User Name dev_qa@email.com...................................passed
+Then Enter the Password 1234567.............................................passed
+Then Click on Continue Button...............................................passed
+Then Verify whether login successful or not.................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.face.stepDefinitions.PPlusDaily.verifyLoginSuccessful(PPlusDaily.java:68)
+	at ✽.Then Verify whether login successful or not(PPlusComparison.feature:24)
+]]></failure>
+</testcase>
+</testsuite>
