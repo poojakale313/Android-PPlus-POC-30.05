@@ -51,7 +51,7 @@ public class StepBase2 {
 
 			System.out.println("Config file loaded");
 
-			File application = new File(objConfig.getProperty("file_path"));
+			//File application = new File(objConfig.getProperty("file_path"));
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 
 			capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,
