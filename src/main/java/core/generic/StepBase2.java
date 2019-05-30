@@ -58,6 +58,7 @@ public class StepBase2 {
 			objConfig.getProperty("device.platformName"));
 			capabilities.setCapability(MobileCapabilityType.VERSION, objConfig.getProperty("device.platformVersion"));
 			capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, objConfig.getProperty("device.name"));
+			File app = new File(System.getProperty("user.dir") + "/home/aressqa/Desktop/PregnancyLite/build/outputs/apk/lite/debug/Pregnancy_liteDebug-5.0.apk"); 
 			capabilities.setCapability("app", application.getAbsolutePath());
 //			 capabilities.setCapability(MobileCapabilityType.APP_PACKAGE.r
 			
